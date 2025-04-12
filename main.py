@@ -2,7 +2,8 @@
 import logging
 from aiogram import Bot, Dispatcher, types, executor
 
-API_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+import os
+API_TOKEN = os.getenv("BOT_TOKEN")
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
